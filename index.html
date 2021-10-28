@@ -25,64 +25,180 @@
     <main class="main-container">
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-          <div class="container">
-            <a class="navbar-brand" href="#"> <img src="ressources/images/logo-fdb.png" alt="" width="100">A . D . B .</a>
-            <button class="navbar-toggler hidden-lg-up bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation"></button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-              <ul class="navbar-nav me-auto mt-2 mt-lg-0 ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Association <span class="visually-hidden">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Evénements</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-              </ul>
-              <form class="d-flex my-2 my-lg-0">
-                
-                <button class="btn btn-danger my-2 my-sm-0" type="submit">Nous Rejoindre</button>
-              </form>
+        <nav class="navbar navbar-expand-lg sticky-top p-0 m-0">
+            <div class="container">
+                <a class="navbar-brand link-light" href="#"> <img src="ressources/images/logo-fdb.png" alt="" width="100">A . D . B .
+                </a>
+                <button class="navbar-toggler hidden-lg-up " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 ">
+                        <li class="nav-item active">
+                            <a class="nav-link link-light" href="#">Association <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="#">Evénements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+
+                        <button class="btn btn-danger my-2 my-sm-0" type="submit">Adhérer à l'association</button>
+                    </form>
+                </div>
             </div>
-          </div>
         </nav>
-       
+        <!--Fil d'ariane
+        <div class="container-fluid breadcrumb-content bg-danger">
+            <div class="row">
+                <div class="col-12">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="ms-3">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active text-light" aria-current="page">Accueil</li>
+                            <li class="breadcrumb-item">
+                                <a href="Association.html" class="text-decoration-none text-light">Association</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="Evenements.html" class="text-decoration-none text-light">Evènements</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="Contact.html" class="text-decoration-none text-light">Contact</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>-->
+
         <!--Header-->
-        <header class="header">
+        <header>
+            <video class="video-fluid shadow ratio ratio-16x9 " autoplay loop muted>
+                <source src="ressources/videos/JDA Dijon - Teaser officiel 20_21.mp4" type="video/mp4 " />
+            </video>
 
         </header>
-
-        <!--Fil d'ariane-->
-
         <!--Sections-->
-        <section class="sect-apropos">
 
+
+
+        <section class="sect-apropos " style="background: url(ressources/images/fond-a-propos.jpg) ">
+            <sdiv class="mod-presentation p-5 ">
+                <div class="container mt-4 mt-lg-5 ">
+                    <div class="row align-items-lg-center justify-content-lg-evenly g-0 ">
+                        <article class="col-12 col-lg-6 me-lg-5 ">
+                            <img class="img-fluid shadow p-3 bg-body" src="ressources/images/photo-carousel3.jpg" alt="">
+                        </article>
+
+                        <article class=" col-12 col-lg-5 mt-3 mt-lg-0 p-3 shadow bg-white " style=" border-radius: 10px; ">
+                            <h2 class="text-center ">A propos de nous</h2>
+                            <p class="text-justify py-3 "><strong>L'A.D.B - Association Dijon Basket </strong>est une
+                                <strong>association Dijonnaise</strong> qui réunit les personnes autour du <strong>Basket Féminin et Masculin à Dijon</strong>.
+                            </p>
+                            <p class="text-justify ">Créée en janvier 2018, elle propose des <strong>évènements autour du
+                                    monde du basket</strong> et des <strong>sorties organisées</strong> les jours de matchs de la JDA.
+                            </p>
+                            <p class="text-justify ">L'A.D.B. c'est aussi des tarifs préférentiels sur les matchs à domicile, des bons plans avec les partenaires de la JDA mais c'est surtout une communauté soudée autour d'une même passion.
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-lg-end ">
+                                <a class="btn btn-outline-dark mb-4 mt-3 mt-lg-5 " href="Association.html " role="button ">En savoir +</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
         </section>
 
-        <section class="sect-evenements">
+        <section class="container-fluid mod-evenements ">
+            <div class="container mt-4 mt-lg-5 ">
+                <div class="row align-items-lg-center justify-content-lg-evenly g-0 ">
+                    <article class="col-12 col-lg-5 evts me-lg-5 my-3 p-3 shadow bg-white " style=" border-radius: 10px; ">
+                        <h2 class="text-center m-3">évènements</h2>
+                        <p class="text_justify "><strong>L’association A.D.B.</strong> est heureuse de vous proposer <strong><br>les activités suivantes :</strong>
+                        </p>
 
+                        <h3>Réunion du bureau directeur</h3>
+                        <h6>Une fois par mois</h6>
+                        <ul>
+                            <li><strong><u>Lundi</u> :</strong> de 18h00 à 19h00
+                                <address><em>Siège de l'association</em></address>
+                            </li>
+                        </ul>
+                        <p class="information "><svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 " fill="currentColor " class="bi bi-exclamation-triangle " viewbox="0 0 16 16 ">
+                  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176
+                        0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z "/>
+                  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z "/>
+                  </svg><b> Les séances sont ouvertes à l'ensemble des membres</b>
+                        </p>
+
+                        <h3>Rassemblement</h3>
+                        <ul>
+                            <li>
+                                <strong><u>Jeudi</u></strong> : à partir de 19h
+                                <address><em>Le PUB - Place de la libération</em></address>
+                                <p><span class="attention ">
+                                <b>Soirée à thème possible</b></span></p>
+                            </li>
+
+                        </ul>
+
+                        <h3>Matchs</h3>
+                        <ul>
+                            <li>
+                                <strong><u>Variable</u></strong> : départ communiqué par mail ou sms
+                                <address><em>Départ prévu Place de la mairie</em></address>
+                                <p><span class="attention ">
+                                <b>N'oubliez pas de communiquer le nombre de place nécessaire</b></span></p>
+                            </li>
+
+                        </ul>
+
+                        <div class="d-flex justify-content-center justify-content-lg-end ">
+                            <a class="btn btn-outline-dark mb-4 mt-3 mt-lg-5 " href="Evenements.html " role="button ">En savoir +</a>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-lg-6 shadow" style=" border: 1px solid">
+                        <h2 class="text-center m-3 ">Portail Billeterie</h2>
+                        <div class="container-frame ">
+
+                            <iframe class="responsive-iframe " src=" https://web.digitick.com/index-css5-jdadijonbasket-pg1.html " frameborder="0 " scrolling="no " marginheight="0 " marginwidth="0 ">
+                            </iframe></div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section class="sect-membres">
+        <section class="sect-contact ">
+            <div class="d-flex justify-content-center m-5 p-5">
+                <form action="action_page.php">
+                    <div class="container-newsletter-title">
+                        <h2>S'inscrire à la Newsletter</h2>
+                        <p>Chaque semaine, recevez les dernières infos des évémenents à venir</p>
+                    </div>
+                    <div class="container-newsletter" style="background-color:white">
+                        <input type="text" placeholder="Nom et Prenom" name="name" required>
+                        <input type="text" placeholder="Adresse E-mail" name="mail" required>
+                        <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Recevoir, également, les news de nos partenaires.
+                      </label>
+                    </div>
 
-        </section>
-
-        <section class="sect-contact">
-
+                    <div class="container-newsletter">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!--Footer-->
-        <footer class="footer">
+        <footer class="footer ">
 
         </footer>
     </main>
 
 
     <!-- Script - jQuery -->
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js "></script>
 </body>
 
 
