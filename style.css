@@ -14,7 +14,7 @@ height: auto;
 width: 100%;
 font-family: 'Kaushan Script', cursive;
 }
-.footer {
+footer {
     background-color: black;  
 }
 .nav-link,
@@ -24,7 +24,9 @@ font-family: 'Kaushan Script', cursive;
 .foot-link {
 text-decoration: none;
 }
-
+.imagepart {
+    width: 16vh;
+}
 .nav-link:hover,
 .link-info:hover,
 .contact-link:hover,
@@ -117,41 +119,213 @@ border: none;
 input[type=submit]:hover {
 opacity: 0.8;
 }
+
+
+
 /*Association.html*/
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.imgassociation {
+    border-radius: 50%;
+}
 .flip-box {
-background-color: transparent;
-width: 400px;
-height: 500px;
-border: 1px solid #f1f1f1;
-perspective: 1000px;
+    background-color: transparent;
+    width: 400px;
+    height: 800px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+   .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+    .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+    .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    /* affichage pour navigateur Safari */
+    backface-visibility: hidden;
+  }
+  
+   .flip-box-front {
+    background-color: #1b2234;
+    color: black;
+  }
+  
+  
+  .flip-box-back {
+    background-color: #1a2132;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  
+.comparatif{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+
+  th, td {
+    text-align: center;
+    padding: 16px;
+  }
+  
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+  
+ 
+  tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+  
+ 
+  input[type=text], select {
+    width:150%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 150%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container-modal2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }  
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .container {
+    padding: 0 16px;
 }
-.flip-box-inner {
-position: relative;
-width: 400px;
-height: 500px;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
+
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-.flip-box:hover .flip-box-inner {
-transform: rotateY(180deg);
+  
+.title {
+    color: grey;
 }
-.flip-box-front,
-.flip-box-back {
-position: absolute;
-width: 400px;
-height: 500px;
--webkit-backface-visibility: hidden;
-/* Safari */
-backface-visibility: hidden;
+.titleassoc
+{
+    border-bottom: 2px solid #dc3545;
 }
-.flip-box-front {
-background-color: rgb(255, 255, 255);
-color: black;
+
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #dc3545;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
 }
-.flip-box-back {
-background-color: rgb(255, 255, 255);
-color: white;
-transform: rotateY(180deg);
-border: black 1px
-}
+
+.button:hover {
+    background-color: #555;
+  }
+
+  /**Media Queries**/
+
+    @media screen and (max-width: 991px) {
+      .flipboxpc {
+        display: none;
+    }
+      }
+      @media screen and (min-width: 992px) {
+     .flipboxteltablette {
+      display: none;
+      
+    }
+        }
+     
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    @media screen and (max-width: 991px) {
+    .adherer {
+      border-bottom: 1px solid #dc3545;
+    }
+    }
+    
+    @media screen and (min-width: 992px) {
+      .adherer {
+        border-right: 1px solid #dc3545;
+      }
+      }
+
+      @media screen and (max-width: 769px) {
+        .carousel1{
+          display: none;
+      }
+        }
+        @media screen and (min-width: 768px) {
+       .carousel2 {
+        display: none;
+        
+      }
+          }
