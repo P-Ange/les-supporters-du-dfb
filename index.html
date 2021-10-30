@@ -49,7 +49,7 @@
                     </ul>
                     <form class="d-flex my-2 my-lg-0">
 
-                        <button class="btn btn-danger my-2 my-sm-0" type="submit">Adhérer à l'association</button>
+                        <button class="btn btn-danger my-2 my-sm-0" type="submit"  href="Association.html#adhesion">Adhérer à l'association</button>
                     </form>
                 </div>
             </div>
@@ -112,20 +112,40 @@
                                 communauté soudée autour d'une même passion.
                             </p>
                             <div class="d-flex justify-content-center justify-content-lg-end ">
-                                <a class="btn btn-outline-dark mb-4 mt-3 mt-lg-5 " href="Association.html "
+                                <a class="btn btn-outline-dark mb-4 mt-3 mt-lg-5 " href="Association.html"
                                     role="button ">En savoir +</a>
                             </div>
                         </article>
                     </div>
                 </div>
         </section>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel1 slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="ressources/images/bg-match1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="ressources/images/bg-match2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="carouselExampleControls" class="carousel2 slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ressources/images/bg-match1-mobile.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="ressources/images/bg-match2-mobile.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -185,14 +205,14 @@
                                 </ul>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <strong>Tarif : </strong>15 euro par personne / gratuit pour les moins de 3 ans
-                            </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center justify-content-lg-end ">
+                                <b>Tarif :</b>15€ par personne / gratuit pour les moins de 3 ans
+                            </div><div class="d-flex justify-content-center justify-content-lg-end ">
                     <a class="btn btn-outline-dark mb-4 mt-3 mt-lg-5 " href="Association.html " role="button ">En savoir
                         +</a>
                 </div>
+                    </div>
+                </div>
+                
                 </article>
         </section>
         <article class="billeterie cols cols shadow bg-white ">
@@ -257,37 +277,46 @@
 
 
         <!--Footer-->
-        <footer class="footer text-center text-white">
-            <div class="container p-4">
-                <section class="">
-                    <form action="">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-auto">
-
-                                <strong>Inscrivez-vous à notre newsletter</strong>
-                                <div class="col-12">
-                                    <div class="form-outline form-white">
-                                        <label for="email"></label>
-                                        <input type="email" id="email" placeholder="Votre E-mail" name="email">
-
-                                        <button type="submit" class="btn btn-outline-light">
-                                            S'inscrire
-                                        </button>
-                                    </div>
-                                </div>
-                    </form>
-                </section>
-                <section class=" p-3">
+            <footer class="text-white">
+              <div class="container p-4">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">A.D.B. - Association Dijon Basket</h5>
+          
                     <p>
                         Vous aimez le Basket ? Alors rejoignez-nous et soutenez nos actions !
                     </p>
-                </section>
-            </div>
-            <div class="text-center">
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Nos Partenaires</h5>
+                         <img class="imagepart" src="ressources/images/Partenaires.png" alt="">    
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">LIENS UTILES</h5>
+          
+                    <ul class="list-unstyled text-decoration-none">
+                      <li>
+                        <a href="https://www.jdadijon.com/basket/" class="text-white">Portail JDA</a>
+                      </li>
+                      <li>
+                        <a href="http://club.quomodo.com/dfb" class="text-white">Dijon Féminin Basket</a>
+                      </li>
+                      <li>
+                        <a href="http://www.ajcb-basket.fr/" class="text-white">Association Jeunesse Club Basket</a>
+                      </li>
+                      <li>
+                        <a href="https://www.comitebasket21.fr/" class="text-white">Comité Départemental Basket 21</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="text-center p-3" style="border-top: solid 1px white; background-color:#dc3545;" >
                 © 2021 Copyright: Pascal Cretin L'Ange
-            </div>
-        </footer>
-        <!-- Footer -->
+              </div>
+            </footer>
+            <!-- Footer -->
     </main>
 
 
