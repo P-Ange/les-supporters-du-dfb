@@ -1,10 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Urbanist:wght@300&family=Varela+Round&display=swap');
 * {
 font-size: 18px;
 box-sizing: border-box;
+
 }
 
+body {
+    font-family:'Varela Round', sans-serif;
+}
+
+#scroll_to_top {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    bottom: 50px;
+    right: 30px;
+  }
+  #scroll_to_top img {
+    width: 25px;
+  }
+
+/*Bandeau version mobile*/
+.bandeau-mobile {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .bandeau-mobile img {vertical-align: middle;}
+  
+  .bandeau-mobile .content-title {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+/*Bandeau version pc*/
+  .bandeau-pc {
+    position: relative;
+   
+    margin: 0 auto;
+  }
+  
+  .bandeau-pc img {vertical-align: middle;}
+  
+  .bandeau-pc .content-title {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
 /*Navbar et footer*/
 
 .navbar
@@ -88,42 +143,12 @@ border-top-right-radius: 10px;
 .billeterie {
 border-radius: 10px;
 }
-.form {
-border: 1px solid #000000;
-border-radius: 10px;
-}
-.container-newsletter {
-padding: 20px;
-}
-.container-newsletter-title {
-padding: 20px;
-text-align: center;
-}
-input[type=text],
-input[type=submit] {
-width: 100%;
-padding: 12px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-box-sizing: border-box;
-}
-input[type=checkbox] {
-margin-top: 16px;
-}
-input[type=submit] {
-background-color: #c90000;
-color: white;
-border: none;
-}
-input[type=submit]:hover {
-opacity: 0.8;
-}
-
 
 
 /*Association.html*/
 
+
+h1,
 h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -199,7 +224,7 @@ h2 {
   
  
   input[type=text], select {
-    width:150%;
+    width:100%;
     padding: 10px 10px;
     margin: 8px 0;
     display: block;
@@ -208,7 +233,7 @@ h2 {
     box-sizing: border-box;
   }
   input[type=email], select {
-    width: 150%;
+    width: 100%;
     padding: 10px 10px;
     margin: 8px 0;
     display: block;
@@ -286,7 +311,60 @@ h2 {
     background-color: #555;
   }
 
-  /**Media Queries**/
+/*Evenement.html*/
+.event {
+    background: #fff;
+    padding: 10px 0;
+  }
+  .event .event-precis {
+    text-align: bottom;
+    margin-bottom: 10px;
+    background: white;
+    position: relative;
+  }
+  .event .event-precis .event-info {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+  }
+  .event .event-precis .event-info-content {
+    margin-top: 50px;
+    transition: margin 0.2s;
+  }
+  .event .event-precis:hover .event-info {
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    transition: 0.4s;
+  }
+  .event .event-precis:hover .event-info-content {
+    margin-top: 0;
+    transition: margin 0.4s;
+  }
+  .event .event-precis h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: black;
+  }
+  .event .event-precis span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: black;
+  }
+ 
+  
+
+
+
+  /*Media Queries*/
 
     @media screen and (max-width: 991px) {
       .flipboxpc {
@@ -323,9 +401,38 @@ h2 {
           display: none;
       }
         }
-        @media screen and (min-width: 768px) {
-       .carousel2 {
+    @media screen and (min-width: 768px) {
+    .carousel2 {
+    display: none;
+    
+    }
+        }
+    @media screen and (min-width: 768px) {
+    .textinfomobile {
         display: none;
         
-      }
-          }
+    }
+        }
+    @media screen and (max-width: 769px) {
+        .textinfopc {
+            display: none;
+            
+        }
+            }
+
+    @media screen and (max-width: 768px) {
+        .bandeau-pc {
+            display: none;
+            
+        }
+            }
+    @media screen and (min-width: 769px) {
+        .bandeau-mobile {
+            display: none;
+            
+        }
+            }
+        
+
+            
+    
