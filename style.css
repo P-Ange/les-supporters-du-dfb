@@ -360,9 +360,13 @@ h2 {
     color: black;
   }
  
-  
+  .gdnoel {
+    border-bottom: 1px solid #dc3545;
+  }
 
-
+.txtgalerie {
+    border-top: 1px solid #dc3545;
+}
 
   /*Media Queries*/
 

@@ -101,146 +101,261 @@
             <div class="col-12 p-4 ">
                 <div class="titleassoc">
                     <h1 class="text-center">Evènements</h1>
-                    <h6 class="text-center">Les dernières actualités de l'association et des clubs se trouvent ici !
-                    </h6>
+
                     <!--Titre et introduction page-->
-
-                    <!--Version pc - media querie-->
-                    <div class="textinfopc">
-                        <p class="text-center img-thumbnail">(+ d'infos en passant sur l'image)</p>
-                    </div>
-                    <!--Version pc - media querie-->
-
-                    <!--Version mobile - media querie-->
-                    <div class="textinfomobile">
-                        <p class="text-center img-thumbnail">(+ d'infos en cliquant sur l'image)</p>
-                    </div>
-                    <!--Version mobile - media querie-->
                 </div>
             </div>
 
-            <!--Galerie-->
 
-            <!--Galerie Ligne 1-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-1.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">𝐇𝐀𝐏𝐏𝐘 𝐇𝐀𝐋𝐋𝐎𝐖𝐄𝐄𝐍 🎃</h4>
-                                    <span class="text-center">Alors, quel est votre déguisement cette année ? À la JDA
-                                        Dijon, Jacques et Céline ont mis la barre haute 😏</span>
+            <div class="gdnoel text-center bg-white shadow vw-50">
+                <h4>Le Grand Noël de l'ADB</h4>
+                <img class="img-thumbnail" src="/ressources/images/affiche-noel.jpg" alt="affiche noel">
+                <p class="pt-3"> Vous voulez en savoir plus sur le spectacle ?</p> <i> Voici le résumé :</i>
+                <p> Cette année, le Père Noël a stocké une grande partie de ses cadeaux sur une ile secrète au milieu de
+                    l'océan afin de s'assurer de la bonne livraison des cadeaux pour tous les enfants d’une partie du
+                    Globe.
+                    A quelques jours du lancement de sa grande tournée, la Reine des pirates et son équipage ont repéré
+                    l'ile secrète et veulent s'emparer des cadeaux ! Le Père Noël et ses plus fidèles lutins vont devoir
+                    se mobiliser afin de pouvoir assurer la Grande Tournée de Noël.</p>
+                <div> <b>Au programme :</b>
+                    <ul>
+                        <li>🎄 De 17h30 à 18h30 : assistez au spectacle : Le trésor de Noël, un conte
+                            moderne
+                            en
+                            musique (chants, ballets, danses) pour toute la famille. Les enfants sont
+                            invités à
+                            venir déguisés en pirates, princes, princesses ou encore lutins de Noël</li>
 
+
+
+                        <li>🎄 A partir de 18h30 : nous vous accueillons dans Le monde de Noël où de
+                            nombreuses
+                            animations
+                            vous attendent : structures gonflables, goûter... Un invité surprise pourrait
+                            même pointer
+                            le bout de sa hotte !</li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <b>Tarif: </b>15€ par personne / gratuit pour les moins de 3 ans
+                </div>
+                <div class="d-flex justify-content-center pb-5">
+                    <a href="" class="w-50 btn btn-lg btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">S'inscrire</a>
+                </div>
+
+
+                <!--Modal-->
+
+                <div class="modal fade" id="staticBackdrop" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel2">Formulaire d'inscription</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-modal2 d-flex justifiy-content-center">
+                                    <form action="/action_page.php">
+                                        <label for="fname">Prénom</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="Votre prénom"
+                                            required>
+                                        <label for="lname">Nom</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="Votre nom de famille"
+                                            required>
+                                        <label for="email">Adresse e-mail</label>
+                                        <input type="email" id="email" name="email" placeholder="Votre adresse e-mail"
+                                            required>
+                                        <label for="Bulletin">Nombre de place(s)</label>
+                                        <select id="Bulletin" name="Bulletin">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </form>
                                 </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-target="#exampleModalToggle3"
+                                    data-bs-toggle="modal">Valider l'inscription</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-2.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">𝐀𝐕𝐄𝐂 𝐕𝐎𝐔𝐒, 𝐏𝐎𝐔𝐑 𝐆𝐀𝐆𝐍𝐄𝐑</h4>
-                                    <span class="text-center">C'était chaud vendredi soir contre Roanne 🔥</span>
-
+                </div>
+                <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel3">Inscription validée !</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-modal2 d-flex justifiy-content-center text-center">
+                                    <p><b>Merci pour votre inscription !</b> <br> <i> Rendez-vous à notre permanence
+                                            pour régler vos places</i></p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-3.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">Road to Final</h4>
-                                    <span class="text-center">✨ Une magnifique dernière danse à domicile pour nos
-                                        Dijonnais, avec ce succès 83 à 59 !</span>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-4.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">De l'enjeu, du sport, de l'émotion : ne manquez pas ça !!
-                                    </h4>
-                                    <span class="text-center">🚨 C'est pour ces moments-là qu'on vit et qu'on vibre
-                                        Rendez-vous dimanche pour le match de l'année à Dijon !! 🎫 Prenez vos
-                                        places</span>
-                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!--Galerie Ligne 1-->
+                <!--Modal-->
 
-                <!--Galerie Ligne 2-->
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-5.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">113🔥</h4>
-                                    <span class="text-center">Jacques Alingue, dans l'histoire 🖤</span>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-6.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">Match - Vendredi 13 Novembre</h4>
-                                    <span class="text-center">🆚 | Strasbourg
-                                        🏆 | Jeep Élite
-                                    </span>
-                                    <span class="text-center">📍 | Palais des Sports de Dijon
-                                        ⌚ | 18h30
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-7.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">Direction Antibes !</h4>
-                                    <span class="text-center">Direction Antibes pour nos Espoirs dans le cadre du
-                                        Trophée du Futur 2021 ! 🚌
-                                    </span>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="event-precis">
-                            <img src="ressources/images/event-8.jpg" class="img-fluid" alt="">
-                            <div class="event-info">
-                                <div class="event-info-content">
-                                    <h4 class="text-center">Ils sont partout 😵</h4>
-                                    <span class="text-center">La JDA Dijon arrive sur Tiktok !</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Galerie Ligne 2-->
 
                 <!--Galerie-->
+                <h5 class="txtgalerie text-center p-3">Les dernières actualités de l'association se trouvent ici !
+                </h5>
+                <!--Version pc - media querie-->
+                <div class="textinfopc">
+                    <p class="text-center img-thumbnail">(+ d'infos en passant sur l'image)</p>
+                </div>
+                <!--Version pc - media querie-->
 
-            </div>
+                <!--Version mobile - media querie-->
+                <div class="textinfomobile">
+                    <p class="text-center img-thumbnail">(+ d'infos en cliquant sur l'image)</p>
+                </div>
+                <!--Version mobile - media querie-->
+
+
+                <!--Galerie Ligne 1-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-1.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">𝐇𝐀𝐏𝐏𝐘 𝐇𝐀𝐋𝐋𝐎𝐖𝐄𝐄𝐍 🎃</h4>
+                                        <span class="text-center">Alors, quel est votre déguisement cette année ? À la
+                                            JDA
+                                            Dijon, Jacques et Céline ont mis la barre haute 😏</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-2.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">𝐀𝐕𝐄𝐂 𝐕𝐎𝐔𝐒, 𝐏𝐎𝐔𝐑 𝐆𝐀𝐆𝐍𝐄𝐑</h4>
+                                        <span class="text-center">C'était chaud vendredi soir contre Roanne 🔥</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-3.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">Road to Final</h4>
+                                        <span class="text-center">✨ Une magnifique dernière danse à domicile pour nos
+                                            Dijonnais, avec ce succès 83 à 59 !</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-4.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">De l'enjeu, du sport, de l'émotion : ne manquez pas ça
+                                            !!
+                                        </h4>
+                                        <span class="text-center">🚨 C'est pour ces moments-là qu'on vit et qu'on vibre
+                                            Rendez-vous dimanche pour le match de l'année à Dijon !! 🎫 Prenez vos
+                                            places</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Galerie Ligne 1-->
+
+                    <!--Galerie Ligne 2-->
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-5.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">113🔥</h4>
+                                        <span class="text-center">Jacques Alingue, dans l'histoire 🖤</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-6.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">Match - Vendredi 13 Novembre</h4>
+                                        <span class="text-center">🆚 | Strasbourg
+                                            🏆 | Jeep Élite
+                                        </span>
+                                        <span class="text-center">📍 | Palais des Sports de Dijon
+                                            ⌚ | 18h30
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-7.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">Direction Antibes !</h4>
+                                        <span class="text-center">Direction Antibes pour nos Espoirs dans le cadre du
+                                            Trophée du Futur 2021 ! 🚌
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="event-precis">
+                                <img src="ressources/images/event-8.jpg" class="img-fluid" alt="">
+                                <div class="event-info">
+                                    <div class="event-info-content">
+                                        <h4 class="text-center">Ils sont partout 😵</h4>
+                                        <span class="text-center">La JDA Dijon arrive sur Tiktok !</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Galerie Ligne 2-->
+
+                    <!--Galerie-->
+
+                </div>
         </section>
         <!--section evenements-->
     </main>
